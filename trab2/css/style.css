@@ -147,6 +147,11 @@ footer div {
     top:0px;
 }
 
+.sidenav ul {
+    margin: 0;
+    padding: 0;
+}
+
 .sidenav li{
     display: flex;
 }
@@ -192,31 +197,35 @@ footer div {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 500px;
+    width: 1000px;
     margin: 0 auto;
     padding: 20px;
+    top: 2em;
+    position: relative;
 }
 
-h1 {
+.container h1 {
     color: #333;
+    text-align: center;
 }
 
-label {
+form label {
     display: block;
     text-align: left;
     margin-top: 10px;
 }
 
-input[type="text"], input[type="email"], select {
+.camposFormulario input, select {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
-button {
+form button {
     background-color: #333;
     color: #fff;
     border: none;
@@ -228,4 +237,39 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+form fieldset {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px;
+  }
+form legend {
+    background-color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.camposFormulario , .camposPreferencias {
+    display: flex;
+}
+
+.infoPessoais {
+    flex: 1;
+}
+
+.endereco {
+    flex: 2;
+    margin-left: 10px;
+}
+
+.preferencias {
+    flex: auto;
+}
+
+.preferencias div {
+    display: flex;
 }
