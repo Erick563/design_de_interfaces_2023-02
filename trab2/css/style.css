@@ -1,6 +1,7 @@
 body {
     background-color: #DAC243;
     margin: 0;
+    min-width: 900px;
 }
 
 a {
@@ -10,7 +11,8 @@ a {
 nav {
     display: flex;
     height: 54px;
-    background-color: #ffffff;
+    background-color: #D9D9D9;
+    min-width: 900px;
 }
 
 nav ul {
@@ -27,7 +29,7 @@ nav li {
 }
 
 nav a {
-    font-size: 16px;
+        font-size: 16px;
     color: black;
 }
 
@@ -41,15 +43,142 @@ a:visited {
 
 main {
     background-image: url('../images/mulher-academia.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
-    height: 813px;
+    height: 100vh;
+    min-width: 900px;
+}
+
+header {
+    height: 70px;
+    display: flex;
 }
 
 header h1 {
     margin-left: 30px;
+    align-self: center;
 }
 
-footer div p {
-    display: inline;
+footer div {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.divBuscaRapida {
+    display: flex;
+    align-self: center;
+    margin-left: 100px;
+    background-color: #D9D9D9;
+    padding: 0px;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.inputBuscaRapida {
+    flex: 2;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+    border-color: #ffffff;
+}
+
+.botaoBuscaRapida {
+    padding: 10px 10px;
+    background-color: #D9D9D9;
+    color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.divLogin {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    text-align: center;
+    align-self: center;
+    margin-left: 5px;
+}
+
+.botaoLogin {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 5px;
+}
+
+.botaoCadastro {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 5px;
+}
+
+.botaoLogin:hover {
+    background-color: #ff9933;
+}
+
+.botaoCadastro:hover {
+    background-color: #555;
+}
+
+.sidenav {
+    height: auto;
+    width: 117.84px;
+    background-color: #d9d9d9; 
+    position:sticky;
+    top:0px;
+}
+
+.sidenav li{
+    display: flex;
+}
+
+.sidenav li a.localPage{
+    display: flex;
+}
+
+.sidenav a {
+    padding: 10px 5px 10px 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    display: inline-flex;
+    flex-grow:1;
+    justify-content: center;
+    text-align: center;
+}
+
+.sidenav a:hover {
+    color: #ff6600;
+}
+
+.sidenav a.localPage:hover{
+    color:#000000;
+}
+
+.sidenav a.localPage{ 
+    background-color: #ffffff;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    
+}
+
+.box{
+    height: 642px;
+    width: 117.84px;
+    background-color: #d9d9d9;
+    display: flex;
 }
